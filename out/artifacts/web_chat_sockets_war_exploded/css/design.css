@@ -1,0 +1,11 @@
+#container {
+    width: 100%;
+    margin: auto;
+}
+.padd {
+    padding-top: 15px;
+}
+#messages-list {
+    max-height: 95vh;
+    overflow: auto;
+}

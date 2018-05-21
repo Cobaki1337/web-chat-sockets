@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Tomcat WebSocket Chat</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="/css/design.css">
+  <script type="text/javascript" src="/js/frontSocket.js"></script>
+  <script type="text/javascript" src="/js/additionalFunctions.js"></script>
+</head>
+<body>
+<div id="container" class="row">
+  <div class="col-md-4 col-sm-12 col-xs-12" >
+      <div class="row">
+        <div id="textarea" class="text col-xs-12 col-sm-8 col-md-12 padd">
+          <textarea name="text" class="form-control" rows="8" id="message" ></textarea>
+        </div>
+        <div id="login-form" class="login col-xs-12 col-sm-4 col-md-12 padd">
+          <div class="form-group">
+            <label for="login">Login: </label>
+            <input name="login" type="text" class="form-control" id="login" >
+          </div>
+          <button class="btn btn-primary btn-block" type="submit" id="sendButton" onClick="postToServer()">Send!</button>
+        </div>
+      </div>
+  </div>
+
+  <div class="col-md-8 col-sm-12 col-xs-12 padd">
+    <div id="messages-list" class="list-group">
+    </div>
+  </div>
+</div>
+</body>
+</html>
